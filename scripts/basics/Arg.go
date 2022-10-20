@@ -13,7 +13,7 @@ func PrintUsage() { // impression du message d'usage
 }
 
 func Arg(nARGS, expargs int) (input string, banner string, output string) { // vérification d'erreurs sur les arguments
-	if nARGS > expargs { // nombre d'arguments supérieur à 2
+	if nARGS > expargs { // nombre d'arguments supérieur à 3
 		PrintUsage()
 	}
 	if nARGS < 1 {

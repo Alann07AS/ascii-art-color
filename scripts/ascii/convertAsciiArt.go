@@ -2,6 +2,7 @@ package ascii
 
 import (
 	// "fmt"
+	"fmt"
 	"strings"
 )
 
@@ -16,7 +17,7 @@ func ConvertAsciiArt(splitterAAT []string, input string) (asciiart string) {
 			ncharline := (char-32)*9 + 1                       // N° de ligne du caractère
 			asciiLines := splitterAAT[ncharline : ncharline+8] // prendre les 8 lignes
 			arrascii = append(arrascii, asciiLines)            // les stocker dans une ligne du tableau
-			// fmt.Println(asciiLines)
+			fmt.Println(arrascii)
 		}
 		for iline := 0; iline < 8; iline++ { // 	boucler 8x
 			for _, line := range arrascii { // 			Parcourir les tableaux des caractères
