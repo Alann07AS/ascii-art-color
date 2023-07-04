@@ -1,11 +1,11 @@
 clear
-go run . "hello" standard | cat -e
-go run . "hello world" shadow | cat -e
-go run . "nice 2 meet you" thinkertoy | cat -e
-go run . "you & me" standard | cat -e
-go run . "123" shadow | cat -e
-go run . "/(\")" thinkertoy | cat -e
-go run . "ABCDEFGHIJKLMNOPQRSTUVWXYZ" shadow
-go run . "\"#$%&/()*+,-./" thinkertoy | cat -e
-go run . "It's Working" thinkertoy | cat -e
-
+go run . --color red "banana" 
+go run . "hello world" --color=red
+go run . "1 + 1 = 2" --color=green
+go run . "(%&) ??" --color=yellow
+go run . "s|omething" --color=yellow
+go run . "s|o|mething" --color=yellow
+go run . "s|om|ething" --color=orange
+go run . "HeY |GuYs" --color=orange
+go run . 'RG|B|()' --color=blue
+# go run . 
